@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "ModernRIBs",
-        "repositoryURL": "https://github.com/DevYeom/ModernRIBs",
+        "repositoryURL": "https://github.com/DevYeom/ModernRIBs.git",
         "state": {
-          "branch": null,
+          "branch": "main",
           "revision": "8884514a2b98e98dd381f941054a5cbb275eaaf2",
-          "version": "1.0.2"
+          "version": null
         }
       }
     ]
