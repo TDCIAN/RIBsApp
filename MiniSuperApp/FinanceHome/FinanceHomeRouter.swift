@@ -18,15 +18,20 @@ final class FinanceHomeRouter: ViewableRouter<FinanceHomeInteractable, FinanceHo
     private let cardOnFileDashboardBuildable: CardOnFileDashboardBuildable
     private var cardOnFileRouting: Routing?
     
+    private let addPaymentMethodBuildable: AddPaymentMethodBuildable
+    private var addPaymentMethodRouting: Routing?
+    
     // TODO: Constructor inject child builder protocols to allow building children.
     init(
         interactor: FinanceHomeInteractable,
         viewController: FinanceHomeViewControllable,
         superPayDashboardBuildable: SuperPayDashboardBuildable,
-        cardOnFileDashboardBuildable: CardOnFileDashboardBuildable
+        cardOnFileDashboardBuildable: CardOnFileDashboardBuildable,
+        addPaymentMethodBuildable: AddPaymentMethodBuildable
     ) {
         self.superPayDashboardBuildable = superPayDashboardBuildable
         self.cardOnFileDashboardBuildable = cardOnFileDashboardBuildable
+        self.addPaymentMethodBuildable = addPaymentMethodBuildable
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
     }

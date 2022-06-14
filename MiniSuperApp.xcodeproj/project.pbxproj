@@ -23,6 +23,10 @@
 		1E4FD61A28581FE500210771 /* PaymentMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FD61928581FE500210771 /* PaymentMethod.swift */; };
 		1E4FD61D2858208800210771 /* CardOnFileRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FD61C2858208800210771 /* CardOnFileRepository.swift */; };
 		1E4FD61F285823CF00210771 /* PaymentMethodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4FD61E285823CF00210771 /* PaymentMethodViewModel.swift */; };
+		1E5A5A85285947E0007F2D94 /* AddPaymentMethodRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5A5A81285947E0007F2D94 /* AddPaymentMethodRouter.swift */; };
+		1E5A5A86285947E0007F2D94 /* AddPaymentMethodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5A5A82285947E0007F2D94 /* AddPaymentMethodViewController.swift */; };
+		1E5A5A87285947E0007F2D94 /* AddPaymentMethodBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5A5A83285947E0007F2D94 /* AddPaymentMethodBuilder.swift */; };
+		1E5A5A88285947E0007F2D94 /* AddPaymentMethodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5A5A84285947E0007F2D94 /* AddPaymentMethodInteractor.swift */; };
 		1E5EF66A283CF6DF008D7B32 /* ModernRIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 1E5EF669283CF6DF008D7B32 /* ModernRIBs */; };
 		F57EBE542738468700FE9319 /* UIImage+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE512738468700FE9319 /* UIImage+Utils.swift */; };
 		F57EBE552738468700FE9319 /* Array+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57EBE522738468700FE9319 /* Array+Utils.swift */; };
@@ -78,6 +82,10 @@
 		1E4FD61928581FE500210771 /* PaymentMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethod.swift; sourceTree = "<group>"; };
 		1E4FD61C2858208800210771 /* CardOnFileRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardOnFileRepository.swift; sourceTree = "<group>"; };
 		1E4FD61E285823CF00210771 /* PaymentMethodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentMethodViewModel.swift; sourceTree = "<group>"; };
+		1E5A5A81285947E0007F2D94 /* AddPaymentMethodRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodRouter.swift; sourceTree = "<group>"; };
+		1E5A5A82285947E0007F2D94 /* AddPaymentMethodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodViewController.swift; sourceTree = "<group>"; };
+		1E5A5A83285947E0007F2D94 /* AddPaymentMethodBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodBuilder.swift; sourceTree = "<group>"; };
+		1E5A5A84285947E0007F2D94 /* AddPaymentMethodInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPaymentMethodInteractor.swift; sourceTree = "<group>"; };
 		F57EBE512738468700FE9319 /* UIImage+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Utils.swift"; sourceTree = "<group>"; };
 		F57EBE522738468700FE9319 /* Array+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Utils.swift"; sourceTree = "<group>"; };
 		F57EBE532738468700FE9319 /* UITableView+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Utils.swift"; sourceTree = "<group>"; };
@@ -175,6 +183,17 @@
 			path = Repository;
 			sourceTree = "<group>";
 		};
+		1E5A5A80285947C4007F2D94 /* AddPaymenthMethod */ = {
+			isa = PBXGroup;
+			children = (
+				1E5A5A81285947E0007F2D94 /* AddPaymentMethodRouter.swift */,
+				1E5A5A82285947E0007F2D94 /* AddPaymentMethodViewController.swift */,
+				1E5A5A83285947E0007F2D94 /* AddPaymentMethodBuilder.swift */,
+				1E5A5A84285947E0007F2D94 /* AddPaymentMethodInteractor.swift */,
+			);
+			path = AddPaymenthMethod;
+			sourceTree = "<group>";
+		};
 		F57F6AD926DB49E500C0117D /* AppHome */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,6 +210,7 @@
 		F57F6ADA26DB49EA00C0117D /* FinanceHome */ = {
 			isa = PBXGroup;
 			children = (
+				1E5A5A80285947C4007F2D94 /* AddPaymenthMethod */,
 				1E4FD60B2858163600210771 /* CardOnFileDashboard */,
 				1E4FD5FB2858014F00210771 /* SuperPayDashboard */,
 				F57F6AE426DB4A2700C0117D /* FinanceHomeRouter.swift */,
@@ -404,6 +424,7 @@
 				F5EAA230270B3A7100EF2B70 /* RIBs+Utils.swift in Sources */,
 				F57EBE542738468700FE9319 /* UIImage+Utils.swift in Sources */,
 				F5EAA22B270B3A4500EF2B70 /* TransportHomeBuilder.swift in Sources */,
+				1E5A5A86285947E0007F2D94 /* AddPaymentMethodViewController.swift in Sources */,
 				F5EAA21D270B395900EF2B70 /* HomeWidgetModel.swift in Sources */,
 				F5EAA21E270B395900EF2B70 /* AppHomeRouter.swift in Sources */,
 				F5EAA21A270B395900EF2B70 /* AppHomeBuilder.swift in Sources */,
@@ -417,6 +438,7 @@
 				F5EAA219270B395900EF2B70 /* HomeWidgetView.swift in Sources */,
 				1E4FD60A285813CC00210771 /* Formatter.swift in Sources */,
 				F57F6AFE26DB4CD700C0117D /* RootTabBarController.swift in Sources */,
+				1E5A5A85285947E0007F2D94 /* AddPaymentMethodRouter.swift in Sources */,
 				1E4FD6022858018300210771 /* SuperPayDashboardBuilder.swift in Sources */,
 				F57F6AEB26DB4A2700C0117D /* FinanceHomeInteractor.swift in Sources */,
 				1E4FD6132858165700210771 /* CardOnFileDashboardInteractor.swift in Sources */,
@@ -424,6 +446,8 @@
 				1E4FD60828580AE700210771 /* Combine+Utils.swift in Sources */,
 				F57F6AE826DB4A2700C0117D /* FinanceHomeRouter.swift in Sources */,
 				F57F6AE926DB4A2700C0117D /* FinanceHomeViewController.swift in Sources */,
+				1E5A5A88285947E0007F2D94 /* AddPaymentMethodInteractor.swift in Sources */,
+				1E5A5A87285947E0007F2D94 /* AddPaymentMethodBuilder.swift in Sources */,
 				F5829F5926DB2BC400BFA8CD /* AppDelegate.swift in Sources */,
 				F5EAA21C270B395900EF2B70 /* AppHomeViewController.swift in Sources */,
 				1E4FD61F285823CF00210771 /* PaymentMethodViewModel.swift in Sources */,
