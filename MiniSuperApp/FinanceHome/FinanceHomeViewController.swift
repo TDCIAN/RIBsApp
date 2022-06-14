@@ -20,14 +20,7 @@ final class FinanceHomeViewController: UIViewController, FinanceHomePresentable,
         stackView.spacing = 4
         return stackView
     }()
-    
-    private let scrollView: UIScrollView = {
-        let scrollView = UIScrollView(frame: UIScreen.main.bounds)
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
-        scrollView.backgroundColor = .systemGreen
-        return scrollView
-    }()
-    
+
     init() {
         super.init(nibName: nil, bundle: nil)
         
@@ -44,18 +37,11 @@ final class FinanceHomeViewController: UIViewController, FinanceHomePresentable,
         title = "슈퍼페이"
         tabBarItem = UITabBarItem(title: "슈퍼페이", image: UIImage(systemName: "creditcard"), selectedImage: UIImage(systemName: "creditcard.fill"))
         view.backgroundColor = .white
-//        view.addSubview(stackView)
-//        NSLayoutConstraint.activate([
-//            stackView.topAnchor.constraint(equalTo: view.topAnchor),
-//            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-//            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
-//        ])
-        view.addSubview(scrollView)
+        view.addSubview(stackView)
         NSLayoutConstraint.activate([
-            scrollView.topAnchor.constraint(equalTo: view.topAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
-            scrollView.trailingAnchor.constraint(equalTo: view.trailingAnchor),
-            scrollView.bottomAnchor.constraint(equalTo: view.bottomAnchor)
+            stackView.topAnchor.constraint(equalTo: view.topAnchor),
+            stackView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            stackView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
         ])
     }
     
