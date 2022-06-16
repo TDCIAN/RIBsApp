@@ -1,6 +1,6 @@
 import ModernRIBs
 
-protocol FinanceHomeInteractable: Interactable, SuperPayDashboardListener, CardOnFileDashboardListener {
+protocol FinanceHomeInteractable: Interactable, SuperPayDashboardListener, CardOnFileDashboardListener, AddPaymentMethodListener {
     var router: FinanceHomeRouting? { get set }
     var listener: FinanceHomeListener? { get set }
 }
@@ -58,5 +58,19 @@ final class FinanceHomeRouter: ViewableRouter<FinanceHomeInteractable, FinanceHo
         
         self.cardOnFileRouting = router
         attachChild(router)
+    }
+    
+    func attachAddPaymentMethod() {
+        if addPaymentMethodRouting != nil {
+            return
+        }
+        let router = addPaymentMethodBuildable.build(withListener: interactor)
+        viewControllable.present(router.viewControllable, animated: true, completion: nil)
+        addPaymentMethodRouting = router
+        attachChild(router)
+    }
+    
+    func detachAddPaymentMethod() {
+        
     }
 }
