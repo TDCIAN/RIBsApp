@@ -9,15 +9,6 @@
           "revision": "581849239060948b626d1173eb0e5926818e7f8c",
           "version": null
         }
-      },
-      {
-        "package": "ModernRIBs",
-        "repositoryURL": "https://github.com/DevYeom/ModernRIBs",
-        "state": {
-          "branch": null,
-          "revision": "8884514a2b98e98dd381f941054a5cbb275eaaf2",
-          "version": "1.0.2"
-        }
       }
     ]
   },
