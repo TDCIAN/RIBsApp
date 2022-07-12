@@ -118,7 +118,8 @@ let package = Package(
         .testTarget(
             name: "TopupImpTests",
             dependencies: [
-                "TopupImp"
+                "TopupImp",
+                "FinanceRepositoryTestSupport"
             ]
         )
     ]
