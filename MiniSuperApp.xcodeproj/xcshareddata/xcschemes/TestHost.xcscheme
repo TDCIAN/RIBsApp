@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1250"
+   LastUpgradeVersion = "1320"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F5829F5426DB2BC400BFA8CD"
-               BuildableName = "MiniSuperApp.app"
-               BlueprintName = "MiniSuperApp"
+               BlueprintIdentifier = "1E6D089C287FD93000DCDC7C"
+               BuildableName = "TestHost.app"
+               BlueprintName = "TestHost"
                ReferencedContainer = "container:MiniSuperApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,16 +26,15 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      codeCoverageEnabled = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1E6D0866287FB5BD00DCDC7C"
-               BuildableName = "MiniSuperAppUITests.xctest"
-               BlueprintName = "MiniSuperAppUITests"
+               BlueprintIdentifier = "1E6D08B5287FD9C700DCDC7C"
+               BuildableName = "AddPaymentMethodIntegrationTests.xctest"
+               BlueprintName = "AddPaymentMethodIntegrationTests"
                ReferencedContainer = "container:MiniSuperApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -55,9 +54,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5829F5426DB2BC400BFA8CD"
-            BuildableName = "MiniSuperApp.app"
-            BlueprintName = "MiniSuperApp"
+            BlueprintIdentifier = "1E6D089C287FD93000DCDC7C"
+            BuildableName = "TestHost.app"
+            BlueprintName = "TestHost"
             ReferencedContainer = "container:MiniSuperApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -72,9 +71,9 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F5829F5426DB2BC400BFA8CD"
-            BuildableName = "MiniSuperApp.app"
-            BlueprintName = "MiniSuperApp"
+            BlueprintIdentifier = "1E6D089C287FD93000DCDC7C"
+            BuildableName = "TestHost.app"
+            BlueprintName = "TestHost"
             ReferencedContainer = "container:MiniSuperApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

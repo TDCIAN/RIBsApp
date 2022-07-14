@@ -43,13 +43,13 @@ func setupURLProtocol() {
                 "color": "#3478f6ff",
                 "isPrimary": false
             ],
-            [
-                "id": "2",
-                "name": "현대카드",
-                "digits": "8121",
-                "color": "#78c5f5ff",
-                "isPrimary": false
-            ]
+//            [
+//                "id": "2",
+//                "name": "현대카드",
+//                "digits": "8121",
+//                "color": "#78c5f5ff",
+//                "isPrimary": false
+//            ]
         ]
     ]
     

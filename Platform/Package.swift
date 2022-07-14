@@ -45,6 +45,8 @@ let package = Package(
         .package(name: "ModernRIBs", url: "https://github.com/DevYeom/ModernRIBs.git", .exact("1.0.1")),
         .package(url: "https://github.com/pointfreeco/combine-schedulers", from: "0.5.3"),
         .package(name: "SnapshotTesting", url: "https://github.com/pointfreeco/swift-snapshot-testing", from: "1.9.0"),
+        .package(name: "Swifter", url: "https://github.com/httpswift/swifter", from: "1.5.0"),
+        .package(name: "Hammer", url: "https://github.com/lyft/Hammer", .exact("0.13.0")),
     ],
     targets: [
         .target(
@@ -69,7 +71,9 @@ let package = Package(
         .target(
             name: "PlatformTestSupport",
             dependencies: [
-                "SnapshotTesting"
+                "SnapshotTesting",
+                "Swifter",
+                "Hammer"
             ]
         ),
         .target(
